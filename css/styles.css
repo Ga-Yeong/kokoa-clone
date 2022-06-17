@@ -1,64 +1,17 @@
+/* font-family와 같이 모든 스크린에 적용될 수 있는 스타일들 */
+
 /* Google Fonts, 꼭 필요한 폰트만 추가!! */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 @import "reset.css";
 @import "variables.css";
-@import "status-bar.css";
+
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+
+/* Screens */
+@import "screens/login.css";
+
 body {
     font-family: 'Open Sans', sans-serif;
-}
-
-.welcome-header {
-    margin: 90px 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.welcome-header__title {
-    margin-bottom: 20px;
-    font-size: 25px;
-}
-.welcome-header__text {
-    width: 60%;
-    opacity: 0.7;
-    margin-bottom: 20px;
-}
-
-#login-form {
-    display: flex;
-    flex-direction: column;
-    margin: 0 30px;
-}
-
-#login-form input {
-    border: none;
-    padding: 15px 0;
-    font-size: 18px;
-    margin-bottom: 25px;
-}
-
-#login-form input:not([type="submit"]) {
-    border-bottom: solid 1px rgba(0, 0, 0, 0.2);
-    transition: border-color 0.3s ease-in-out;
-}
-
-#login-form input::placeholder {
-    color: rgba(0, 0, 0, 0.4);
-}
-
-#login-form input:focus {
-    border-color: var(--yellow);
-}
-#login-form input[type="submit"] {
-    background-color: var(--yellow);
-    cursor: pointer;
-    padding: 20px;
-    border-radius: 5px; /* 버튼 모서리를 둥글게 */
-}
-
-#login-form a {
-    text-align: center;
-    text-decoration: none; /* 링크 밑줄 없애기 */
-    color: inherit; /* 부모로부터 상속(a태그가 login-form으로부터 상속 받음) */
-    font-size: 13px;
 }

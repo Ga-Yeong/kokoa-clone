@@ -46,3 +46,8 @@ table {
 input:focus {
     outline: none;
 }
+
+a {
+    color: inherit; /* 부모로부터 상속 */
+    text-decoration: none; /* 링크 밑줄 없애기 */
+}

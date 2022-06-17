@@ -1,0 +1,18 @@
+.nav {
+    position: fixed; /* 스크롤해도 네비게이션 위치 고정 */
+    bottom: 0; /* 아래쪽에서 0px에 위치 지정 */
+    width: 100%;
+    background-color: #f9f9fa;
+    padding: 20px 50px;
+    box-sizing: border-box; /* 테두리까지 포함해서 너빗값 지정 */
+    border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__btn {
+    color: #2e363e;
+}
